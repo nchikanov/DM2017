@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: cb8f57d405c744009b579bfe0ab4b63c
+timeCreated: 1485135290
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: HabboPseudoMono
+  fontNames:
+  - HabboPseudoMono
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
