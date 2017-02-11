@@ -16,5 +16,5 @@ function OnMouseExit()
 function OnMouseDown()
 {
 	//sorry u ded
-	Application.LoadLevel(4); 
+	Application.LoadLevel(4); // right now, try again (load level) 
 } 

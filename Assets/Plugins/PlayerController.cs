@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour {
 
+	//private JS1 jsScript;
+
 	public float speed; 
 	private static int score = 0; 
 	private int curr_score; 
@@ -13,20 +15,28 @@ public class PlayerController : MonoBehaviour {
 	public Text levelText; 
 	private float timepassed;
 	private int LEVEL_SEC = 20; 
-	private static int lvl = 0;  
+	static int lvl = 0;  
 	private int SCORE2PASS; 
+
+	/*void Awake(){
+		jsScript = this.GetComponent<JS1>();
+	}*/
 
 	void Start(){
 		lvl++; 
 		levelText.text = "Level: " + lvl.ToString (); 
 		timepassed = 30;
-		SCORE2PASS = lvl * lvl * 100; 
+		SCORE2PASS = lvl * 150; 
 		setText (); 
 	}
 
 	void reStart(){
 		lvl = 0; 
 		score = 0; 
+	}
+
+	public int getLevel(){
+		return lvl; 
 	}
 
 	void Update()
@@ -43,8 +53,10 @@ public class PlayerController : MonoBehaviour {
 			//Application.Quit (); 
 			if ((score >= SCORE2PASS))
 				Application.LoadLevel (3); //LOADING PAGE
-			else
+			else{
 				Application.LoadLevel (4); //DIE
+				reStart(); 
+			}
 		}
 
 	}
@@ -68,7 +80,7 @@ public class PlayerController : MonoBehaviour {
 	} // called when player first touches 2D trigger collider 
 
 	void setText() {
-		countText.text = "Score: " + score.ToString (); 
+		countText.text = "Score: " + score.ToString () + " / " + SCORE2PASS.ToString(); 
 		//timeText.text = "Seconds left: " + timepassed.ToString (); 
 
 	}

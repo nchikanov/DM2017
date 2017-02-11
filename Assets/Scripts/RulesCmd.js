@@ -1,7 +1,11 @@
 ﻿#pragma strict
 
+//private var csScript : PlayerController;
+
 var Button: Sprite; 
 var Button_Down: Sprite;  
+var script;
+var cs;
 
 function OnMouseEnter()
 {
@@ -15,5 +19,6 @@ function OnMouseExit()
 
 function OnMouseDown()
 {
+	//script.reStart(); 
 	Application.LoadLevel(1); 
 } 

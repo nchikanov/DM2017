@@ -88,7 +88,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1b282f53abd6480e9e4f1d564016295, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: {x: 0, y: -5}
+  velocity: {x: 0, y: -4}
 --- !u!212 &212783697652154000
 SpriteRenderer:
   m_ObjectHideFlags: 1
